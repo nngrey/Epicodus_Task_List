@@ -31,11 +31,11 @@ class Task
 end
 end
 
-new_list = List.new("Chores")
-puts new_list.list_name
-# new_task = Task.new("Mow grass")
-# puts new_task.description
-# new_list.add_task(new_task)
+# new_list = List.new("Chores")
+# puts new_list.list_name
+# # new_task = Task.new("Mow grass")
+# # puts new_task.description
+# # new_list.add_task(new_task)
+# # puts new_list.tasks[0].description
+# new_list.add_task("Paint house")
 # puts new_list.tasks[0].description
-new_list.add_task("Paint house")
-puts new_list.tasks[0].description

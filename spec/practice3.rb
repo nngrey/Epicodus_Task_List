@@ -1,3 +1,2 @@
-arr = ["cows"]
-animal = "cows"
-puts arr[0] == animal
+arr = ["cows", "dogs", "cats"]
+puts arr[2]

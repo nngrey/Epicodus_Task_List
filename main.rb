@@ -3,7 +3,7 @@ require './lib/to_do'
 @lists = []
 
 def main_menu
-  puts "Welcome to List Maker \n\n"
+  puts "\nWelcome to List Maker \n\n"
   puts "Press l to make a new list"
   puts "Press x to exit the program"
   puts "Enter the name of a list to access the list"
@@ -19,16 +19,14 @@ def main_menu
         puts "You need to do: #{current_task.description}"
         end
       end
-    end
 
-    puts "Press Y to add to this list, press D to delete a task, or any key to return to main menu"
+
+    puts "Press y to add to this list, press d to delete a task, or any key to return to main menu"
     answer = gets.chomp
-    if answer == 'Y'
-      puts "Enter a task to add to #{list_name}"
-      new_task = gets.chomp
-      list.tasks << Task.new(new_task)
+    if answer == 'y'
+      list.tasks << task_maker(list)
       main_menu
-    elsif answer == "D"
+    elsif answer == "d"
       puts "Enter the task you want to delete:"
       kill_task = gets.chomp.to_i
       list.tasks.delete_at(kill_task -1)
@@ -36,11 +34,11 @@ def main_menu
     else
       main_menu
     end
-
+end
   end
 end
 
-def list_maker 
+def list_maker
   puts "What would you like to name your list?"
   list_name = gets.chomp
   new_list = List.new(list_name)

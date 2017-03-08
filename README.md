@@ -1,6 +1,6 @@
-Epicodus Exercise
+#Epicodus Exercise
 
-To do
+Task List
 
 Follow along the example of creating a To Do list program.
 Extend it so that a user can mark a task as done and have it removed from their list.
